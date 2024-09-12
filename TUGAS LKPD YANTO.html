@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #fffbfb;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(67, 17, 232);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #fffefe;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #0d0d0d;
+  color: rgb(15, 15, 15);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #2350f4;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(242, 242, 245);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #efeaea;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Website rizki</h1>
+  <p>selamat datang bagi anda</p>
+</div>
+
+<div class="topnav">
+  <a href="c:\W3School\css-tutorial\CSS_01Tutorial\CSS61floatexample-01.html">CSSfloat</a>
+  <a href="https://www.instagram.com/rizki.aryanto.106?igsh=MWJhczNvN3B1NWxhOA==">instragram</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>LATDASTAR</h2>
+      <h5>SMKN2 SBG,  8, 2023</h5>
+      <div class="fakeimg" style="height:500px;"><IMG SRC="IMG-20230811-WA0184.jpg" width="440px" height="470px"></div>
+      <p>CATAR</p>
+      <p>CALON TARUNA</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;"><img src="IMG-20230927-WA0087.jpg" width="200" height="180"></div>
+      <p>TARUNA STEMPER</p>
+      <p>REKAYASA PERANGKAT LUNAK</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>KERJASAMA</h2>
+      <div class="fakeimg" style="height:100px;"><img src="IMG-20240522-WA0100.jpg" width="160px" height="90px"></div>
+      <p>KUNJUGAN INDRUSTRI</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>SMK 2 SBG</p></div>
+      <div class="fakeimg"><p>SMK 2 SBG</p></div>
+      <div class="fakeimg"><p>SMK 2 SBG</p></div>
+      </div>
+    <div class="card">
+      <h3>follow me:</h3>
+      <p>#Rizki Aryanto_</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>terima kasih telah membuka web saya</h2>
+</div>
+
+</body>
+</html>
